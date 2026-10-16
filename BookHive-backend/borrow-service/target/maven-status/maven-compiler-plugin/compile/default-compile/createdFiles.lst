@@ -1,0 +1,11 @@
+com\bookhive\borrowservice\controller\BorrowController.class
+com\bookhive\borrowservice\dto\BorrowRequest$BorrowRequestBuilder.class
+com\bookhive\borrowservice\repository\BorrowRepository.class
+com\bookhive\borrowservice\model\Borrow.class
+com\bookhive\borrowservice\service\BorrowService.class
+com\bookhive\borrowservice\feign\BookServiceClient.class
+com\bookhive\borrowservice\feign\FineServiceClient.class
+com\bookhive\borrowservice\BorrowServiceApplication.class
+com\bookhive\borrowservice\dto\BorrowRequest.class
+com\bookhive\borrowservice\model\Borrow$BorrowStatus.class
+com\bookhive\borrowservice\model\Borrow$BorrowBuilder.class

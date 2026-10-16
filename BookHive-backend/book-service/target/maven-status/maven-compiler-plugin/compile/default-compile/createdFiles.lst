@@ -1,0 +1,8 @@
+com\bookhive\bookservice\service\BookService.class
+com\bookhive\bookservice\BookServiceApplication.class
+com\bookhive\bookservice\model\Book.class
+com\bookhive\bookservice\controller\BookController.class
+com\bookhive\bookservice\model\Book$BookBuilder.class
+com\bookhive\bookservice\dto\BookRequest.class
+com\bookhive\bookservice\repository\BookRepository.class
+com\bookhive\bookservice\dto\BookRequest$BookRequestBuilder.class

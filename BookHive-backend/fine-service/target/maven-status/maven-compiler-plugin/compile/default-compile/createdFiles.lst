@@ -1,0 +1,13 @@
+com\bookhive\fineservice\model\Fine.class
+com\bookhive\fineservice\dto\FineRequest.class
+com\bookhive\fineservice\controller\FineController.class
+com\bookhive\fineservice\dto\FineRequest$FineRequestBuilder.class
+com\bookhive\fineservice\model\Fine$FineBuilder.class
+com\bookhive\fineservice\dto\PaymentRequest.class
+com\bookhive\fineservice\repository\FineRepository.class
+com\bookhive\fineservice\dto\PaymentRequest$PaymentRequestBuilder.class
+com\bookhive\fineservice\config\WebConfig.class
+com\bookhive\fineservice\service\FineService.class
+com\bookhive\fineservice\feign\package-info.class
+com\bookhive\fineservice\model\Fine$FineStatus.class
+com\bookhive\fineservice\FineServiceApplication.class

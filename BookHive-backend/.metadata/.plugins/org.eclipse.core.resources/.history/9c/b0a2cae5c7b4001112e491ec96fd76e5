@@ -1,0 +1,15 @@
+server.port=8084
+spring.application.name=fine-service
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/bookhive_fines
+spring.datasource.username=postgres
+spring.datasource.password=pappa)12172510
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.properties.hibernate.format_sql=true
+
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+eureka.instance.prefer-ip-address=true

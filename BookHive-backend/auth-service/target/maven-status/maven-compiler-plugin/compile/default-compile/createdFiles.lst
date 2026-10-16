@@ -1,0 +1,17 @@
+com\bookhive\authservice\security\JwtAuthFilter.class
+com\bookhive\authservice\dto\ResetPasswordRequest.class
+com\bookhive\authservice\dto\AuthResponse$AuthResponseBuilder.class
+com\bookhive\authservice\controller\AuthController.class
+com\bookhive\authservice\repository\UserRepository.class
+com\bookhive\authservice\dto\LoginRequest.class
+com\bookhive\authservice\dto\AuthResponse.class
+com\bookhive\authservice\AuthServiceApplication.class
+com\bookhive\authservice\controller\AuthExceptionHandler.class
+com\bookhive\authservice\service\AuthService.class
+com\bookhive\authservice\model\User$Role.class
+com\bookhive\authservice\security\JwtService.class
+com\bookhive\authservice\config\AppConfig.class
+com\bookhive\authservice\dto\RegisterRequest.class
+com\bookhive\authservice\model\User$UserBuilder.class
+com\bookhive\authservice\config\SecurityConfig.class
+com\bookhive\authservice\model\User.class

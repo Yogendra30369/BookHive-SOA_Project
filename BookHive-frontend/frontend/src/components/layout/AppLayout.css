@@ -1,0 +1,77 @@
+/* ===================================================
+   APP LAYOUT — FIXED SIDEBAR + PROPER CONTENT BOUNDS
+   Fixes horizontal scrollbar and width overflow
+   =================================================== */
+
+.app-layout {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  background-color: var(--bg-app);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.app-main {
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+  max-width: calc(100% - var(--sidebar-width));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-app);
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.app-content {
+  flex: 1;
+  padding: 28px 32px 56px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@media (max-width: 900px) {
+  .app-main {
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .app-content {
+    padding: 20px 16px 40px;
+  }
+}
+
+/* ===================================================
+   PUBLIC RESOURCE LAYOUT (UNAUTHENTICATED GUEST BROWSING)
+   =================================================== */
+
+.public-resource-layout {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--bg-app);
+  display: flex;
+  flex-direction: column;
+}
+
+.public-resource-main {
+  flex: 1;
+  width: 100%;
+  padding: 32px 32px 64px;
+  box-sizing: border-box;
+}
+
+.public-resource-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .public-resource-main {
+    padding: 20px 16px 40px;
+  }
+}
+

@@ -1,0 +1,343 @@
+/* ===================================================
+   CLEAN & PROPER USER PROFILE — ARCHIVALIA
+   =================================================== */
+
+.clean-profile-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+/* 1. Header Card */
+.profile-header-card {
+  padding: 28px 32px;
+  border-radius: 14px;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 1px 3px rgba(11, 19, 43, 0.03);
+}
+
+.profile-header-left {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.profile-avatar-container {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: #0B132B;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #E2E8F0;
+  box-shadow: 0 2px 8px rgba(11, 19, 43, 0.08);
+}
+
+.profile-user-icon {
+  color: #FFFFFF;
+}
+
+.profile-online-badge {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #10B981;
+  border: 2px solid #FFFFFF;
+}
+
+.profile-header-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-name {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #0B132B;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.profile-email {
+  font-size: 0.9rem;
+  color: #64748B;
+  margin: 0 0 6px;
+}
+
+.profile-meta-tags {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.status-tag.active {
+  background: #ECFDF5;
+  color: #059669;
+  border: 1px solid #A7F3D0;
+}
+
+.role-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  background: #F1F5F9;
+  color: #334155;
+  border: 1px solid #E2E8F0;
+}
+
+.joined-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: #64748B;
+}
+
+.profile-header-right {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* 2. Activity Summary Grid */
+.profile-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.profile-summary-card {
+  padding: 20px 24px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 1px 3px rgba(11, 19, 43, 0.02);
+}
+
+.summary-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-books {
+  background: #EEF2FF;
+  color: #4F46E5;
+}
+
+.icon-history {
+  background: #F0FDF4;
+  color: #16A34A;
+}
+
+.icon-status {
+  background: #ECFDF5;
+  color: #059669;
+}
+
+.summary-card-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: #64748B;
+  display: block;
+}
+
+.summary-card-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0B132B;
+  line-height: 1.2;
+  margin: 2px 0;
+}
+
+.summary-card-sub {
+  font-size: 0.78rem;
+  color: #64748B;
+  display: block;
+}
+
+/* 3. Personal Information Card */
+.personal-info-card {
+  padding: 28px 32px;
+  border-radius: 14px;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px rgba(11, 19, 43, 0.02);
+}
+
+.card-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.card-main-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0B132B;
+  margin: 0;
+}
+
+.edit-indicator {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: #FEF3C7;
+  color: #B45309;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+/* Table */
+.info-fields-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-field-row {
+  display: flex;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #F8FAFC;
+  font-size: 0.9rem;
+}
+
+.info-field-row:last-child {
+  border-bottom: none;
+}
+
+.info-field-label {
+  width: 180px;
+  color: #64748B;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.info-field-label svg {
+  color: #94A3B8;
+}
+
+.info-field-val {
+  color: #0B132B;
+  flex: 1;
+}
+
+.info-field-val.font-semibold {
+  font-weight: 600;
+}
+
+/* Edit Form */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-fields-row {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 480px;
+}
+
+.form-group-item label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #475569;
+}
+
+.form-group-item input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #CBD5E1;
+  font-size: 0.9rem;
+  color: #0B132B;
+  background: #FFFFFF;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.form-group-item input:focus {
+  border-color: #0B132B;
+  box-shadow: 0 0 0 2px rgba(11, 19, 43, 0.08);
+}
+
+.form-btn-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 12px;
+  border-top: 1px solid #F1F5F9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-header-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile-summary-grid {
+    grid-template-columns: 1fr;
+  }
+  .info-field-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .info-field-label {
+    width: 100%;
+  }
+}

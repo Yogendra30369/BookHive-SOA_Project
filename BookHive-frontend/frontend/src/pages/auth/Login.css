@@ -1,0 +1,546 @@
+/* ===================================================
+   ARCHIVALIA INSTITUTIONAL LOGIN — IMAGE 4 MATCH
+   =================================================== */
+
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #F8F9FB;
+  overflow-x: hidden;
+}
+
+/* Left Visual Panel */
+.login-visual-panel {
+  position: relative;
+  flex: 1.15;
+  min-height: 100vh;
+  background-image: url('/library-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+}
+
+.visual-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(14, 10, 7, 0.65) 0%,
+    rgba(22, 15, 10, 0.38) 42%,
+    rgba(10, 7, 4, 0.68) 100%
+  );
+  backdrop-filter: blur(0px);
+}
+
+.visual-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 52px 60px;
+  height: 100%;
+  color: #FFFFFF;
+}
+
+/* Brand Badge — Highlighted & Illuminated */
+.auth-brand-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 8px 26px 8px 10px;
+  border-radius: 9999px;
+  box-shadow:
+    0 12px 30px -4px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.8),
+    0 0 24px rgba(245, 158, 11, 0.3);
+  text-decoration: none;
+  width: fit-content;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.auth-brand-badge:hover {
+  transform: translateY(-2px) scale(1.02);
+  background: #FFFFFF;
+  box-shadow:
+    0 16px 36px -4px rgba(0, 0, 0, 0.5),
+    0 0 0 2px #F59E0B,
+    0 0 30px rgba(245, 158, 11, 0.4);
+}
+
+.brand-logo-frame {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+  padding: 2px;
+  border: 1.5px solid #F1F5F9;
+}
+
+.brand-logo-frame .brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.brand-badge-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand-badge-title {
+  font-family: var(--font-sans);
+  font-weight: 900;
+  font-size: 1.42rem;
+  letter-spacing: -0.02em;
+  color: #0F172A;
+  line-height: 1;
+}
+
+.brand-badge-accent {
+  color: #E59500;
+}
+
+.brand-badge-tagline {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #64748B;
+}
+
+/* Backward compatibility for archivalia-brand */
+.archivalia-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.brand-icon-box {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 2px;
+}
+
+.brand-name {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+
+.brand-name-accent {
+  color: #F59E0B;
+}
+
+/* Quote — Rich warm glassmorphism */
+.quote-block {
+  max-width: 540px;
+  margin: auto 0;
+  padding: 34px 40px;
+  background: rgba(15, 11, 8, 0.65);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 20px;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  box-shadow:
+    0 20px 45px -10px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.quote-text {
+  font-family: var(--font-serif);
+  font-size: 2.15rem;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #FFFDF8;
+  letter-spacing: -0.01em;
+  margin-bottom: 22px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.gold-rule {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #F59E0B, #FBBF24);
+  border-radius: 2px;
+  margin-bottom: 14px;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
+.quote-caption {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: #FBBF24;
+  text-transform: uppercase;
+  display: block;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.visual-footnote {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 500px;
+  background: rgba(15, 11, 8, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 12px 20px;
+  border-radius: 12px;
+  border-left: 3px solid #F59E0B;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Right Form Panel */
+.login-form-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 32px;
+  background-color: #F8F9FB;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 460px;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E9F0;
+  border-radius: 14px;
+  padding: 44px 40px;
+  box-shadow: 0 16px 36px rgba(11, 19, 43, 0.06), 0 2px 6px rgba(11, 19, 43, 0.03);
+}
+
+.card-header {
+  margin-bottom: 26px;
+}
+
+.login-title {
+  font-family: var(--font-serif);
+  font-size: 1.95rem;
+  font-weight: 600;
+  color: #0B132B;
+  margin-bottom: 8px;
+}
+
+.login-subtitle {
+  font-size: 0.92rem;
+  color: #64748B;
+  line-height: 1.5;
+}
+
+/* Shibboleth Button */
+.btn-shibboleth {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 18px;
+  background-color: #F1F4F9;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #0B132B;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-shibboleth:hover {
+  background-color: #E8EDF5;
+  border-color: #CBD5E1;
+}
+
+.shibboleth-icon {
+  color: #0B132B;
+}
+
+/* Divider */
+.or-divider {
+  display: flex;
+  align-items: center;
+  margin: 24px 0 20px;
+  gap: 12px;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: #E5E9F0;
+}
+
+.divider-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #94A3B8;
+  text-transform: uppercase;
+}
+
+/* Form Fields */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #334155;
+  text-transform: uppercase;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #D5DDE8;
+  border-radius: 7px;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  color: #0B132B;
+  transition: var(--transition);
+}
+
+.form-input:focus {
+  border-color: #0B132B;
+  box-shadow: 0 0 0 3px rgba(11, 19, 43, 0.08);
+}
+
+.form-input::placeholder {
+  color: #94A3B8;
+  font-size: 0.88rem;
+}
+
+.password-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forgot-link {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #B88B4A;
+  transition: color 0.15s ease;
+}
+
+.forgot-link:hover {
+  color: #9E7429;
+  text-decoration: underline;
+}
+
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-with-icon .form-input {
+  padding-right: 42px;
+}
+
+.icon-btn {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #94A3B8;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease;
+}
+
+.icon-btn:hover {
+  color: #334155;
+}
+
+/* Authenticate Button */
+.btn-authenticate {
+  width: 100%;
+  margin-top: 8px;
+  padding: 13px 20px;
+  background-color: #0B132B;
+  border: 1px solid #0B132B;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-size: 0.94rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-authenticate:hover {
+  background-color: #16244C;
+  border-color: #16244C;
+}
+
+/* Footer */
+.login-footer {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 0.84rem;
+  color: #64748B;
+}
+
+.registrar-link {
+  color: #B88B4A;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.registrar-link:hover {
+  color: #9E7429;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .login-container {
+    flex-direction: column;
+  }
+  .login-visual-panel {
+    min-height: 380px;
+    padding: 36px 24px;
+  }
+  .quote-text {
+    font-size: 1.6rem;
+  }
+  .login-form-panel {
+    padding: 36px 20px;
+  }
+}
+
+/* Error message */
+.auth-error {
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  color: #b91c1c;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+/* Password rules checklist */
+.password-rules {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 12px;
+  background: #f8f9fb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.pw-rule {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.78rem;
+  font-family: 'Inter', sans-serif;
+  transition: color 0.2s;
+}
+
+.pw-rule--pass {
+  color: #15803d;
+}
+
+.pw-rule--fail {
+  color: #9ca3af;
+}
+
+.pw-rule svg {
+  flex-shrink: 0;
+}
+
+
+/* Confirm password mismatch */
+.pw-mismatch {
+  margin-top: 5px;
+  font-size: 0.78rem;
+  color: #b91c1c;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ===== Role Toggle (User / Admin) ===== */
+.role-toggle {
+  display: flex;
+  background: #f1f3f6;
+  border-radius: 10px;
+  padding: 4px;
+  margin-bottom: 20px;
+  gap: 4px;
+}
+
+.role-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 0;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  background: transparent;
+  color: #6b7280;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.role-tab--active {
+  background: #fff;
+  color: #0f172a;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.10);
+}
+
+/* Admin button variant */
+.btn-authenticate--admin {
+  background: #1a2744 !important;
+}
+
+.btn-authenticate--admin:hover {
+  background: #0f172a !important;
+}
